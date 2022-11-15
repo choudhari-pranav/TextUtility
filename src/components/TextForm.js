@@ -110,7 +110,7 @@ export default function TextForm(props) {
       >
         {/* <h4>Length of text</h4> */}
         <p>
-          Number of Characters :- {text.length} and Number of words :-
+          Number of Characters :- {text.replace(/\s+/g,'').length} and Number of words :-
           {
             text.split(/\s+/).filter((element) => {
               //jo array text.split kelayvr milel tyatun blank remove karanar. agar function(filter) true return karrta hai to element rahega nai to remove hoga.
