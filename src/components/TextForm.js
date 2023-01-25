@@ -113,18 +113,11 @@ export default function TextForm(props) {
           Number of Characters :- {text.replace(/\s+/g,'').length} and Number of words :-
           {
             text.split(/\s+/).filter((element) => {
-              //jo array text.split kelayvr milel tyatun blank remove karanar. agar function(filter) true return karrta hai to element rahega nai to remove hoga.
-              // About .filter() 1)The filter() method creates a new array filled with elements that pass a test provided by a function.
-              // 2)The filter() method does not execute the function for empty elements.
-              // 3)The filter() method does not change the original array.*/
-
               return element.length !== 0;
-              //jis bhi element ke liye true returnkarega vo isme rahega jiske liye false karega vo nai rahega
             }).length
           }{" "}
           in text
         </p>
-        {/* agara element ki length zero hai to vo element is array me nai rahaega */}
         <p>
           Maximum Time to read this text is :-{" "}
           {0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} minutes to read..
