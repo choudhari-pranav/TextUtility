@@ -1,9 +1,8 @@
-// import logo from './logo.svg';
 import "./App.css";
-import About from "./components/About";
-import Alert from "./components/Alert";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
+import About from "./components/About";
+import Alert from "./components/Alert";
 import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -33,7 +32,7 @@ function App() {
   return (
     <Router>
       <Navbar
-        title="TextUtils"
+        title="TextUtility"
         AboutText="About Us"
         mode={mode}
         toggleMode={toggleMode}

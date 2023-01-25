@@ -108,7 +108,7 @@ export default function TextForm(props) {
         className="container my-2"
         style={{ color: props.mode === "dark" ? "white" : "#042743" }}
       >
-        {/* <h4>Length of text</h4> */}
+        <h4>Your Text Summary</h4>
         <p>
           Number of Characters :- {text.replace(/\s+/g,'').length} and Number of words :-
           {
